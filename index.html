@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phanindra Polina — QA Automation Engineer / SDET</title>
+<style>
+  :root{
+    --bg:#FAFAF7;
+    --surface:#FFFFFF;
+    --ink:#1C2230;
+    --ink-soft:#5B6270;
+    --rule:#E4E2DA;
+    --pass:#0F6E56;
+    --pass-bg:#E1F5EE;
+    --amber:#854F0B;
+    --amber-bg:#FAEEDA;
+    --mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+    --sans: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--sans);
+    line-height:1.6;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:0 24px;}
+
+  header.hero{
+    padding:64px 0 40px;
+    border-bottom:1px solid var(--rule);
+  }
+  .prompt{
+    font-family:var(--mono);
+    font-size:13px;
+    color:var(--ink-soft);
+    margin:0 0 14px;
+  }
+  .prompt::before{content:"$ "; color:var(--pass);}
+  h1{
+    font-family:var(--mono);
+    font-size:32px;
+    font-weight:700;
+    margin:0 0 8px;
+    letter-spacing:-0.5px;
+  }
+  .role-line{
+    font-size:17px;
+    color:var(--ink-soft);
+    margin:0 0 22px;
+  }
+  .contact-row{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+    font-size:14px;
+    font-family:var(--mono);
+  }
+  .contact-row a{color:var(--ink); text-decoration:none; border-bottom:1px solid var(--rule);}
+  .contact-row a:hover{border-bottom-color:var(--ink);}
+
+  .suite-status{
+    margin-top:26px;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background:var(--pass-bg);
+    color:var(--pass);
+    font-family:var(--mono);
+    font-size:13px;
+    padding:6px 12px;
+    border-radius:6px;
+  }
+  .suite-status .dot{width:7px;height:7px;border-radius:50%;background:var(--pass);}
+
+  section{padding:40px 0; border-bottom:1px solid var(--rule);}
+  section:last-of-type{border-bottom:none;}
+  h2{
+    font-family:var(--mono);
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:1.2px;
+    color:var(--ink-soft);
+    margin:0 0 22px;
+  }
+  p.lead{font-size:16px; color:var(--ink); max-width:640px;}
+
+  .case{
+    background:var(--surface);
+    border:1px solid var(--rule);
+    border-radius:8px;
+    padding:20px 22px;
+    margin-bottom:16px;
+  }
+  .case-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap:12px;
+    margin-bottom:6px;
+    flex-wrap:wrap;
+  }
+  .case-title{font-weight:500; font-size:16px;}
+  .case-tag{
+    font-family:var(--mono);
+    font-size:11px;
+    color:var(--pass);
+    background:var(--pass-bg);
+    padding:2px 8px;
+    border-radius:4px;
+    white-space:nowrap;
+  }
+  .case-meta{
+    font-family:var(--mono);
+    font-size:12px;
+    color:var(--ink-soft);
+    margin:0 0 10px;
+  }
+  .case p{margin:0; font-size:14.5px; color:var(--ink-soft);}
+  .case p + p{margin-top:8px;}
+
+  .bug-tag{color:var(--amber); background:var(--amber-bg);}
+
+  .stack-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
+    gap:14px;
+  }
+  .stack-group h3{
+    font-family:var(--mono);
+    font-size:12px;
+    color:var(--ink-soft);
+    text-transform:uppercase;
+    letter-spacing:0.6px;
+    margin:0 0 8px;
+  }
+  .stack-group ul{
+    list-style:none;
+    margin:0; padding:0;
+    font-size:14px;
+  }
+  .stack-group li{margin-bottom:4px;}
+
+  .timeline-item{
+    display:grid;
+    grid-template-columns:140px 1fr;
+    gap:16px;
+    margin-bottom:18px;
+  }
+  .timeline-date{
+    font-family:var(--mono);
+    font-size:12.5px;
+    color:var(--ink-soft);
+    padding-top:2px;
+  }
+  .timeline-body h3{
+    font-size:15px;
+    font-weight:500;
+    margin:0 0 4px;
+  }
+  .timeline-body p{
+    font-size:14px;
+    color:var(--ink-soft);
+    margin:0;
+  }
+
+  footer{
+    padding:40px 0 60px;
+    font-family:var(--mono);
+    font-size:13px;
+    color:var(--ink-soft);
+  }
+  footer a{color:var(--ink); text-decoration:none; border-bottom:1px solid var(--rule);}
+
+  @media (max-width:560px){
+    h1{font-size:26px;}
+    .timeline-item{grid-template-columns:1fr; gap:4px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="hero">
+    <p class="prompt">whoami</p>
+    <h1>Phanindra Polina</h1>
+    <p class="role-line">QA Automation Engineer / SDET — 8.5 years building test coverage for systems where bugs have real consequences</p>
+    <div class="contact-row">
+      <a href="mailto:Phani.pvrk1@gmail.com">Phani.pvrk1@gmail.com</a>
+      <a href="https://www.linkedin.com/in/phanichowdary447/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/PolinaPhanindra" target="_blank" rel="noopener">GitHub</a>
+      <span>Milwaukee, WI</span>
+    </div>
+    <div class="suite-status"><span class="dot"></span>8.5 years · 6 companies · 0 production sev-1s shipped on my watch</div>
+  </header>
+
+  <section>
+    <h2>// Summary</h2>
+    <p class="lead">
+      I build test automation frameworks from the ground up — most recently Playwright + TypeScript at Northwestern Mutual — and use exploratory testing alongside automation to catch what scripted tests miss. My background spans financial services, government, and manufacturing, where the cost of a missed defect is measured in real dollars and real people's records, not just a bad demo.
+    </p>
+  </section>
+
+  <section>
+    <h2>// Case studies</h2>
+
+    <div class="case">
+      <div class="case-head">
+        <span class="case-title">Playwright framework, built from zero</span>
+        <span class="case-tag">Northwestern Mutual</span>
+      </div>
+      <p class="case-meta">Dec 2024 – Present</p>
+      <p>There was no automated test coverage across 30+ internal microservices and integrations when I joined. I designed the framework architecture using Page Object Model for maintainability, built reusable components, and wired it into our GitLab CI pipeline.</p>
+      <p>Result: release validation time cut by 40%, with tests gating CI/CD deploys instead of running as an afterthought.</p>
+    </div>
+
+    <div class="case">
+      <div class="case-head">
+        <span class="case-title">Pre-WFI recon routing bug</span>
+        <span class="case-tag bug-tag">Caught via exploratory testing</span>
+      </div>
+      <p class="case-meta">Northwestern Mutual</p>
+      <p>Recon-created cases for old policies were being misrouted to the legacy system instead of the new one. Root cause: those cases lacked workflow-initiator (WFI) data — which only exists for cases created through the live workflow — so the system misclassified old policies as new ones and sent them down the wrong path.</p>
+      <p>I traced this to the missing data signal and worked with engineering to get it corrected before it affected production billing.</p>
+    </div>
+
+    <div class="case">
+      <div class="case-head">
+        <span class="case-title">Shift-left testing on a government billing platform</span>
+        <span class="case-tag">Peraton / County of San Diego</span>
+      </div>
+      <p class="case-meta">Mar 2020 – Oct 2024</p>
+      <p>Owned QA for the County's property tax system — a platform where a bug means a resident's bill is wrong. Introduced shift-left practices so 60% of defects were caught at the API/integration layer before UI testing even started, and reduced manual testing effort by 50% through automation-first strategies.</p>
+    </div>
+
+  </section>
+
+  <section>
+    <h2>// Stack</h2>
+    <div class="stack-grid">
+      <div class="stack-group">
+        <h3>Automation</h3>
+        <ul>
+          <li>Playwright, Selenium</li>
+          <li>Cypress, Appium</li>
+          <li>TestNG, Cucumber/BDD</li>
+        </ul>
+      </div>
+      <div class="stack-group">
+        <h3>API & integration</h3>
+        <ul>
+          <li>REST-assured, Postman</li>
+          <li>Swagger / OpenAPI</li>
+          <li>Kafka message validation</li>
+        </ul>
+      </div>
+      <div class="stack-group">
+        <h3>CI/CD</h3>
+        <ul>
+          <li>Jenkins, GitLab CI</li>
+          <li>GitHub Actions</li>
+          <li>Azure DevOps</li>
+        </ul>
+      </div>
+      <div class="stack-group">
+        <h3>Languages</h3>
+        <ul>
+          <li>Java, TypeScript</li>
+          <li>Python, C#</li>
+          <li>SQL</li>
+        </ul>
+      </div>
+      <div class="stack-group">
+        <h3>Performance</h3>
+        <ul>
+          <li>k6, JMeter</li>
+        </ul>
+      </div>
+      <div class="stack-group">
+        <h3>Cloud</h3>
+        <ul>
+          <li>AWS, Docker</li>
+          <li>Kubernetes</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>// Experience</h2>
+    <div class="timeline-item">
+      <div class="timeline-date">2024 — present</div>
+      <div class="timeline-body">
+        <h3>Northwestern Mutual</h3>
+        <p>Senior QA Automation Engineer</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">2020 — 2024</div>
+      <div class="timeline-body">
+        <h3>Peraton Inc. (County of San Diego)</h3>
+        <p>Senior QA Automation Engineer</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">2019 — 2020</div>
+      <div class="timeline-body">
+        <h3>Caterpillar Inc.</h3>
+        <p>Automation Engineer</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">2018 — 2019</div>
+      <div class="timeline-body">
+        <h3>Zebra Technologies (via L&amp;T Technology Services)</h3>
+        <p>Automation Engineer</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">2017 — 2018</div>
+      <div class="timeline-body">
+        <h3>National Interstate Insurance · Aboveo Services</h3>
+        <p>Senior QA Analyst / QA Analyst</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>MS, Computer Science — Kent State University &nbsp;·&nbsp; AWS Certified Cloud Practitioner (2026)</p>
+    <p>Built by hand. No frameworks. <a href="https://github.com/PolinaPhanindra" target="_blank" rel="noopener">github.com/PolinaPhanindra</a></p>
+  </footer>
+
+</div>
+
+</body>
+</html>
